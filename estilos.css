@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+    box-sizing: border-box;
+}
+body {
+    background-color: #ff2ecc;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedorPrincipal {
+    max-width: 800px;
+    height: 100px;
+    padding: 20px;
+    width: 100%;
+    margin: 50px 18px;
+
+
+}
+
+.seccion {
+    background-color: hsl(71, 100%, 65%);
+    padding: 50px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.subseccionA {
+    width: 50%;
+
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #0f7514;
+    border-radius: 50%;
+}
+
+.status {
+    display: flex;
+    border: 1px solid #00272b;
+    border-radius: 20px;
+    padding: 6px;
+    margin-right: 40px;
+
+}
+
+.p-status {
+    margin: 0 10px;
+}
+
+.profile {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    margin-top: 12px;
+}
+
+.presentacion {
+    font-size: 35px;
+    border-bottom: 1px solid #00272b;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid black;
+
+
+}
+
+.btn-black:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.btn-lined {
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    text-decoration: underline;
+    border: 1px solid black;
+}
+
+.btn-lined:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/*EDUCACIÓN*/
+
+article .tituloEducacion{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: 40px;
+    
+
+}
+article .imagenEducacion{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imagenEducacion img{
+    max-width: 30%;
+    
+}
+
+article .datosFormacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px auto;
+    margin: 20px auto;
+}
+
+/*EXPERIENCIA*/
+.experiencia .tituloExperiencia{ 
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: 40px;
+}
+.experiencia .Experiencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.experiencia ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.experiencia ul li{
+    color: #ff2ecc;
+    padding: 20px 20px;
+    font-style: bold;
+    text-decoration: underline;
+}
+
+.experiencia ul li:hover{
+    color: #00272b;
+}
+
+
+/*CURSOS Y CERTIFICADOS*/
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 6;}     
+    .div2 { grid-area: 2 / 2 / 5 / 5; }
+    .div3 { grid-area: 5 / 2 / 8 / 5; }
+
+    .div1 h3{
+        margin: 20px auto;
+        text-align: center;
+        font-size: 40px;
+        
+    }
+.parent .div2, .div3{
+    max-height: 30px;
+}
+
+.parent .div2:hover{
+    color: #ff2ecc;
+}
+
+.parent .div3:hover{
+    color: #ff2ecc;
+}
+
+/*PROYECTOS*/
+
+.proyectos .tituloProyectos{
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: 50px;
+}
+
+.Proyecto1 img:hover{ 
+    border-width: 4px;
+    border-color: #00272b;
+}
+/*sticky nav*/
+
+.sticky-nav {
+    height: 200px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: black;
+    position: fixed;
+    top: 60px;
+    left: -30px;
+    margin-left: 60px;
+    display: inline-flex;
+}
+
+li{
+    color:white;
+    padding: 0px;
+
+}
+
+li:hover{
+    color: #ff2ecc;
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+/*CONTACTO ESTILOS*/
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:20px;
+   
+}
+
+.tituloSeccion{
+    padding:20px;
+    margin: 20px;
+}
+
+/*CONTACTO*/
+.contenedorPrincipal .contacto{
+    padding: 60px 0;
+}
+
+.contenedorPrincipal .contacto .tituloContacto{
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    margin: 20px auto;
+}
+.Formulario{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .seccion {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .tituloContacto h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333;
+    }
+    
+    .field {
+        margin-bottom: 15px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #00272b;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+/*FOOTER*/
+footer{
+    margin:20px 0;
+    background-color: #ffffff80;
+    padding:20px;
+    width: 100%;}
+    
